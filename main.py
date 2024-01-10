@@ -152,20 +152,20 @@ def update_planets():
                     lnott=datetime.now().timestamp()
                     if co == 0:
                         data[oPlanet]['col'] = (150, 0, 0)
-                        lnot=planet+" collided with "+oPlanet+" generating a Solid planet"
+                        lnot=planet+" collided with "+oPlanet+" generating a "+btypes[0]
                     elif co == 1:
                         data[oPlanet]['col'] = (255, 150, 150)
-                        lnot=planet+" collided with "+oPlanet+" generating a Gas planet"
+                        lnot=planet+" collided with "+oPlanet+" generating a "+btypes[1]
                     elif co == 2:
                         data[oPlanet]['col'] = (255, 255, 0)
-                        lnot=planet+" collided with "+oPlanet+" generating a Small star"
+                        lnot=planet+" collided with "+oPlanet+" generating a "+btypes[2]
                     elif co == 3:
                         data[oPlanet]['col'] = (255, 0, 0)
-                        lnot=planet+" collided with "+oPlanet+" generating a Big star"
+                        lnot=planet+" collided with "+oPlanet+" generating a "+btypes[3]
                     elif co == 4:
                         data[oPlanet]['col'] = (20, 20, 20)
                         data[oPlanet]['grav'] *= 2
-                        lnot=planet+" collided with "+oPlanet+" generating a Black hole"
+                        lnot=planet+" collided with "+oPlanet+" generating a "+btypes[4]
                     data[oPlanet]['type'] = co
 
         data[planet]['pos'][0] += data[planet]['vel'][0]
@@ -241,5 +241,6 @@ while run:
 
 pygame.quit()
 f.close()
+
 
 
