@@ -64,4 +64,9 @@ Where:
 | Red giant | 3 |
 | Black hole | 4 |
 
+## Important
+
+With both of the 2 first methods shown before, for all the time that's possible will be centered the last star or black hole created. If it collides with another body, it could be eliminated and not be centered anymore, showing the X0 Y0 coordinates at the center.
+With the third method the center will automatically be X0 Y0, if you want to center your favorite celestial body, in all the three methods you can modify the **center** element in the file *settings.json*, by just putting in the name of the boty that you prefer.
+
 Special thanks to Gpopcorn for the original project [AccurateSpaceSimulator](https://github.com/Gpopcorn/AccurateSpaceSimulator)
