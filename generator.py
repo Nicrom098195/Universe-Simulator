@@ -47,6 +47,7 @@ for i in range(stars):
     data[n]["vel"]=[0,0]
     data[n]["type"]=t
     data[n]["temp"]=rin(int(round(maxTemps[t]/3)),maxTemps[t])
+    st["center"]=n
     
 for i in range(planets):
     n=name()
@@ -69,8 +70,11 @@ for i in range(blackHoles):
     data[n]["vel"]=[rin(-2,2),rin(-2,2)]
     data[n]["type"]=4
     data[n]["temp"]=maxTemps[4]
+    st["center"]=n
 
 print(data)
 
 with open(fname, "w") as f:
     f.write(json.dumps(data))
+with open("settings.json", "w") as f:
+    f.write(json.dumps(st))
