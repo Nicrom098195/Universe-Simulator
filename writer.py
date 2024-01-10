@@ -3,6 +3,7 @@ import json
 with open("settings.json", "r") as f:
     st=json.load(f)
 
+
 fname=st["rf"]
 
 data={
@@ -89,5 +90,10 @@ data={
     }
 }
 
+st["center"] = "sun"
+
 with open(fname, "w") as f:
     f.write(json.dumps(data))
+
+with open("settings.json", "w") as f:
+    f.write(json.dumps(st))
