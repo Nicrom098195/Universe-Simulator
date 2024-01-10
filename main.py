@@ -23,7 +23,7 @@ maxTemps=st["mtemps"]
 lnot="Stable universe"
 lnott=datetime.now().timestamp()
 
-muls=False
+muls=st["showAnything"]
 center=st["center"]
 fn=st["rf"]
 
@@ -33,7 +33,7 @@ f=open(fn)
 data=json.load(f)
 md=0
 fs=0
-winSize = (1600, 900)
+winSize = st["winSize"]
 display = pygame.display.set_mode(winSize)
 mpos=[0,0,0,0]#max x, max y, min x, min y
 fps = 30
