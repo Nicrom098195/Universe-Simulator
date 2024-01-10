@@ -1,8 +1,1 @@
-{
-    "rf":"system.json",
-    "mtemps":[2000,2000,3300,4700,-273],
-    "btypes":["Solid planet","Gas planet","Small star","Big star","Black hole"],
-    "center":"IkzpEVPE",
-    "kmperpx":1500,
-    "title":"Universe Simulator"
-}
+{"rf": "system.json", "mtemps": [2000, 2000, 3300, 4700, -273], "btypes": ["Solid planet", "Gas planet", "Small star", "Big star", "Black hole"], "center": "qJDW9b8D", "kmperpx": 1500, "title": "Universe Simulator", "winSize": [1800, 1000],"showAnything":false}
