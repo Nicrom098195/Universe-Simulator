@@ -70,3 +70,16 @@ With both of the 2 first methods shown before, for all the time that's possible 
 With the third method the center will automatically be X0 Y0, if you want to center your favorite celestial body, in all the three methods you can modify the **center** element in the file *settings.json*, by just putting in the name of the boty that you prefer.
 
 Special thanks to Gpopcorn for the original project [AccurateSpaceSimulator](https://github.com/Gpopcorn/AccurateSpaceSimulator)
+
+## settings.json info
+
+There are so much settings on this simulator, so I decided to make an entire part of the README just for this:
+
+- **rf**: is just the name of the file that contains all the info about the universe that you are running
+- **mtemps**: The maximum temperatures that can be reached from the different types of celestial bodies
+- **btypes**: The names of the different celestial bodies based on the table shown before
+- **center**: The name of the body that's kept at the center of the screen
+- **kmperpx**: The entire simulator is based on pixel distances, but for calculating temperatures and the data shown on the top-left of the screen, we need km, so this value is multiplied for the number of pixel to get an accurate value
+- **title**: Just the title of the window
+- **winSize**: The size of the window
+- **showAnything**: Shows every celestial body on the screen. This can be a bit useless in most cases, but if you want to see all the simulation in one time in may be helpful.
