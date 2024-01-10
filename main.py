@@ -129,9 +129,6 @@ def update_planets():
                         
                 if distance*kpp < md:
                     md=distance*kpp
-                if m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*fps*kpp > 299792:
-                    data[planet]["vel"][0]=(m.sqrt(299792**2/2)/kpp/fps-1)
-                    data[planet]["vel"][1]=(m.sqrt(299792**2/2)/kpp/fps-1)
                 if m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*fps*kpp > fs:
                     fs=m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*fps*kpp
 
