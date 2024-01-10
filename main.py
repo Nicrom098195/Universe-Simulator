@@ -129,8 +129,8 @@ def update_planets():
                         
                 if distance*kpp < md:
                     md=distance*kpp
-                if m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*fps*kpp > fs:
-                    fs=m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*fps*kpp
+                if m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*kpp > fs:
+                    fs=m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*kpp
 
                 dx = dx / (distance+0.0000000000000000001) * data[oPlanet]['grav'] * simSpeed
                 dy = dy / (distance+0.0000000000000000001) * data[oPlanet]['grav'] * simSpeed
@@ -241,4 +241,5 @@ while run:
 
 pygame.quit()
 f.close()
+
 
