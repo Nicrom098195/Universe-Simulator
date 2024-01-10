@@ -44,6 +44,8 @@ pygame.display.set_caption(st["title"])
 simSpeed = 0.01
 
 def collision_outcome(type1, type2):
+    if type1 == 4 or type2 == 4:
+        return 4
     if type1 == 0:
         if type2 == 0 or type2 == 1: return 0
     elif type1 == 1:
@@ -127,6 +129,9 @@ def update_planets():
                         
                 if distance*kpp < md:
                     md=distance*kpp
+                if m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*fps*kpp > 299792:
+                    data[planet]["vel"][0]=(m.sqrt(299792**2/2)/kpp/fps-1)
+                    data[planet]["vel"][1]=(m.sqrt(299792**2/2)/kpp/fps-1)
                 if m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*fps*kpp > fs:
                     fs=m.sqrt(data[planet]["vel"][0]**2+data[planet]["vel"][1]**2)*fps*kpp
 
@@ -239,3 +244,4 @@ while run:
 
 pygame.quit()
 f.close()
+
