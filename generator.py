@@ -32,7 +32,7 @@ def name():
 data={}
 
 def gpos(x,y):
-    un=planets+stars
+    un=planets+stars+blackHoles
     un/=2
     return[rin(-1*x*un,x*un),rin(-1*y*un,y*un)]
 
